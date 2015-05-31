@@ -44,8 +44,7 @@ public class PriorityQueueTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testPriorityQueueIntWithIllegalCapacity() {
-        @SuppressWarnings("unused")
-        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(-10);
+        new PriorityQueue<Integer>(-10);
     }
     
     /**

@@ -49,8 +49,7 @@ public class HashTableTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testHashTableIntWithNegativeCapacity() {
-        @SuppressWarnings("unused")
-        HashTable<Double> table = new HashTable<Double>(-7);
+        new HashTable<Double>(-7);
     }
     
     /**
@@ -58,8 +57,7 @@ public class HashTableTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testHashTableIntWithZeroCapacity() {
-        @SuppressWarnings("unused")
-        HashTable<Boolean> table = new HashTable<Boolean>(0);
+        new HashTable<Boolean>(0);
     }
     
     /**
